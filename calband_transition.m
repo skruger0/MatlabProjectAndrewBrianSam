@@ -28,7 +28,7 @@ instructions = repmat(instructions,1,n_bandmembers);
 % find specific location of every band member up to the total number of
 % band members
 % put their i and j values in two column arrays
-[allfoundrowinorder,allfoundcolumninorder] = findcurrentlocationofbandmembers( initial_formation, n_bandmembers)
+[allfoundrowinorder,allfoundcolumninorder] = findcurrentlocationofbandmembers(initial_formation, n_bandmembers)
 %Q: do they output the right values?
 %A: it works! it outputs the indices of all of the band members in order
 %test
