@@ -1,5 +1,5 @@
-function [ allfoundrowinorder,allfoundcolumninorder ] = ...
-    findcurrentlocationofbandmembers( initial_formation, n_bandmembers)
+function [allfoundrowinorder,allfoundcolumninorder] = ...
+    findcurrentlocationofbandmembers(initial_formation, n_bandmembers)
 % find specific location of every band member up to the total number of
 % band members
 % put their i and j values in two column arrays

@@ -1,4 +1,4 @@
-function [ ] = myCompareNchooseK( n )
+function [] = myCompareNchooseK(n)
 % from this function, I concluded that this built-in function nchoosek does
 % not take that long for as many band members as we throw at it up to I
 % tested 180 which is the number of band members in

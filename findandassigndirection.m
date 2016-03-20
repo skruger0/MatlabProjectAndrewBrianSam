@@ -1,4 +1,4 @@
-function [ instructions ] = findandassigndirection(instructions, n_bandmembers,allfoundrowinorder,allfoundcolumninorder)
+function [instructions] = findandassigndirection(instructions, n_bandmembers,allfoundrowinorder,allfoundcolumninorder)
 %find and assign direction
 %   
 for currentindex = 1:n_bandmembers

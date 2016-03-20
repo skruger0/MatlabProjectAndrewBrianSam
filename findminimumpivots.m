@@ -1,4 +1,4 @@
-function [ matrixofminimumpivots ] = findminimumpivots( matrixofdistances )
+function [matrixofminimumpivots] = findminimumpivots(matrixofdistances)
 %create a matrix of minimum pivots
 
 matrixofminimums = matrixofdistances;

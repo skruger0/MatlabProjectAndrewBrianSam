@@ -1,4 +1,4 @@
-function [ ] = myComparePreallocation( n )
+function [] = myComparePreallocation(n)
 % test preallocate vs concatenate
 
 

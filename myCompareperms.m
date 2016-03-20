@@ -1,4 +1,4 @@
-function [ ] = myCompareperms( n )
+function [] = myCompareperms(n)
 % from this function, I concluded that this built-in function perms
 %does not work above 20!
 
