@@ -1,9 +1,10 @@
 function [ output ] = testfunctionforgit()
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
-name = 'brian';
-output = zeros(size(name));
+name = 'brian'
+namecell = ['b','r','i','a','n'];
+output = size(namecell);
 for i = 1:5
-    output(i) = name(i);
+    output(i) = namecell(i);
 end
 end
