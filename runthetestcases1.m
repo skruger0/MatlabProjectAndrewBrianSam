@@ -22,7 +22,7 @@ initial_formation = tiny_block_regroups_initial;
 [instructions] = calband_transition(initial_formation, target_formation, max_beats);
 calband_visualize_transition_v01(initial_formation, target_formation, instructions, max_beats)
 
-max_beats = 25;
+max_beats = 26;
 target_formation = small_line_to_uparrow_target;
 initial_formation = small_line_to_uparrow_initial;
 [instructions] = calband_transition(initial_formation, target_formation, max_beats);
