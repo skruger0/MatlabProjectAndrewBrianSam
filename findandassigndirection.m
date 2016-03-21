@@ -13,9 +13,10 @@ for currentindex = 1:n_bandmembers
         direction1 = 'W';
     elseif target_i == initial_i
         direction1 = '';
-    else
-        direction1 = '.';
-        instructions(currentindex).i_target = initial_i;
+%uncomment if using first min pivot alg 
+%     else
+%         direction1 = '.';
+%         instructions(currentindex).i_target = initial_i;
         
     end
     %j
@@ -25,15 +26,21 @@ for currentindex = 1:n_bandmembers
         direction2 = 'S';
     elseif target_j == initial_j
         direction2 = '';
-    else
-        direction2 ='.'
-        instructions(currentindex).j_target = initial_j;
+%uncomment if using first min pivot alg 
+%     else
+%         direction2 ='.'
+%         instructions(currentindex).j_target = initial_j;
     end
     overalldirection = strcat(direction1,direction2);
     
-    if strcmpi(overalldirection,'..')
+    if target_j == initial_j & target_i == initial_i
         overalldirection = '.';
     end
+    
+%uncomment if using first min pivot alg    
+%     if strcmpi(overalldirection,'..')
+%         overalldirection = '.';
+%     end
     instructions(currentindex).direction = overalldirection;
 end
 

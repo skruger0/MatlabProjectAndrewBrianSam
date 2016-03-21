@@ -10,7 +10,7 @@ n = length(matrixofdistances);
 
 
 
-while length(find(matrixofminimumpivots)) ~= n
+while length(find(matrixofminimumpivots)) ~= n && isnan(matrixofminimums
     %max of each column
     [maxcols, rowindexofmax] = max(matrixofminimums);
     %max of those column maxes
@@ -24,7 +24,7 @@ while length(find(matrixofminimumpivots)) ~= n
     
     if sum(isnan(maxvaluecolumn)) == length(maxvaluecolumn)-1 || sum(isnan(maxvaluerow)) == length(maxvaluerow)-1
         %record location of this pivot
-        matrixofminimumpivots(rowindexofmax(colindexofmaxmax),colindexofmaxmax(1)) = matrixofdistances(rowindexofmax(colindexofmaxmax),colindexofmaxmax(1));
+        matrixofminimumpivots(rowindexofmax(colindexofmaxmax),colindexofmaxmax(1)) = matrixofdistances(rowindexofmax(colindexofmaxmax),colindexofmaxmax(1))
         %set row and col to NaN
             %set all of row and all of col of mimimum val to NaN
         matrixofminimums(:,colindexofmaxmax(1)) = NaN;
@@ -32,7 +32,7 @@ while length(find(matrixofminimumpivots)) ~= n
     else 
         %operate algorithm for reducing maximums
         %set the maxmax to NaN
-        matrixofminimums(rowindexofmax(colindexofmaxmax),colindexofmaxmax(1)) = NaN;
+        matrixofminimums(rowindexofmax(colindexofmaxmax),colindexofmaxmax(1)) = NaN
     end
     
 

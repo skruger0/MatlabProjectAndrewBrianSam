@@ -8,6 +8,8 @@ function [instructions] = calband_transition(initial_formation, target_formation
 %   that you are still meeting these basic requirements, as it is easy to lose
 %   the fundementals as you get more entrenched in a complex problem.
 
+load('sample_transitions.mat')
+
 % Finds the number of bandmembers by adding up all the 1s in the target
 n_bandmembers = sum(sum(target_formation));
 
@@ -44,7 +46,7 @@ allfoundcolumninorder;
 [matrixofdistances] = findmatrixofdistances(i,j,allfoundrowinorder,allfoundcolumninorder)
 
 %create a matrix of minimum pivots
-[matrixofminimumpivots] = findminimumpivots(matrixofdistances)
+[matrixofminimumpivots] = findminimumpivotsviamaxout(matrixofdistances)
 
 %col# = spot# --- row# = person#
 %here are pairings
