@@ -14,6 +14,23 @@ n = length(matrixofdistances);
 %keep track of minimums
 
 
+
+%people to stay still
+[holdi, holdj] = find(matrixofminimums==.1);
+
+for currentwaiter = 1:length(holdi);
+    ivalue = holdi(currentwaiter);
+    jvalue = holdj(currentwaiter);
+    %record location of this pivot
+    matrixofminimumpivots(ivalue,jvalue) = matrixofdistances(ivalue,jvalue);
+    %set row and col to NaN
+    %set all of row and all of col of mimimum val to NaN;
+    matrixofminimums(:,jvalue) = NaN;
+    matrixofminimums(ivalue,:) = NaN;
+end
+    
+
+
 while length(find(matrixofminimumpivots)) ~= n
     %max of each column
     [maxcols, rowindexofmax] = max(matrixofminimums);
