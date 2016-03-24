@@ -5,6 +5,6 @@ for currentindex = 1:n
     instructions(personnumber(currentindex)).i_target = i(spotnumber(currentindex));
     instructions(personnumber(currentindex)).j_target = j(spotnumber(currentindex));
 end
-
+%bren es coo  JK (double jk :) )
 end
 

@@ -23,4 +23,6 @@ instructions = repmat(instructions,1,n_bandmembers);
 % Now it is up to you to figure out how to use the information provided
 % to fill out the instructions struct array with appropriate values!
 
+%DELETE THIS COMMENT
+
 end
